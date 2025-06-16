@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<style>
+    body{
+        background-color: black !important;
+    }
+   .clock{
+    text-align: center;
+    align-items: center;
+   font-size: 40px;
+   font-weight: bolder;
+   color: white;
+   background-color: black !important;
+    overflow: hidden;
+   }
+   .borders{
+    border: 4px solid white;
+    border-radius: 15px;
+    padding: 50px;
+   }
+   .clock-conatainer{
+ 
+    width: fit-content;
+  margin-top: 25vh !important;
+    padding: 40px !important;
+    align-items: center;
+    margin: auto;
+  /* width: 50%; */
+
+  padding: 10px;
+   }
+   .button{
+    text-align: center;
+    align-items: center;
+    
+   }
+   .btn{
+    margin: 10px;
+    width: 100px;
+   }
+   h1{
+    font-weight: bolder;
+    font-size: 60px;
+    color:blue;
+  
+   }
+</style>
+<body>
+    
+    <div class="clock-conatainer">
+        <h1>Stopwatch</h1>
+        <div class="clock borders">
+            <div style="margin-left: 69px; display: flex; align-items: center; text-align: center;"><p class="class" id="hourss">00:</p><p class="clock" id="minutess">00:</p><p class="clock" id="secondss">00:</p><p class="clock" id="msecondss">00</p></div>
+            <div class="button">
+    
+                <button class="btn btn-success" id="myStart">Start</button>
+                <button class="btn btn-warning" id="myStop">Stop</button>
+                <button class="btn btn-danger" id="myReset">Reset</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</html>
